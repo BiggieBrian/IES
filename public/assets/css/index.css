@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap");
+body {
+  font-family: "Montserrat";
+}
+.main-fonts {
+  font-family: "Special Gothic Expanded One";
+}
+.logoPic {
+  width: 7%;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ca {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.nav-links li a:hover {
+  color: #8b0000;
+}
+main,
+.secondary-body {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 0 5% 0;
+}
+section {
+}
+.main-overlay {
+  background-color: transparent;
+}
+.pic {
+  border: 2px solid black;
+}
+.cta-btn {
+  background-color: black;
+  color: antiquewhite;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: 500ms;
+  border-radius: 20px;
+}
+.cta-btn:hover {
+  background-color: darkred;
+  color: white;
+}
+
+span {
+  color: darkred;
+}
+
+.whyus {
+  min-height: 100ssvh;
+  background-image: url(../images/third-main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.overlay {
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5% 0;
+}
+.card {
+  width: 45%;
+  margin: 1% auto;
+  color: antiquewhite;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
+  padding: 1%;
+}
+.quickCard {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+@media (width <= 48rem /* 768px */) {
+  .top-most {
+    display: none;
+  }
+  .logoPic {
+    width: 12%;
+  }
+}
+@media (width <= 64rem /* 768px */) {
+  .main {
+    background-image: url(../images/main.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .main * {
+    color: white;
+  }
+  .main-overlay {
+    min-height: 80vh;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .card {
+    width: 90%;
+    margin: 1% auto;
+  }
+}
+
+.nav-left {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.nav-right {
+  background-color: #8b0000;
+}

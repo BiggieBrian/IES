@@ -1,0 +1,20 @@
+@import url(./index.css);
+.enroll-body {
+  background-image: url(../images/main.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.enroll-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  min-height: 100vh;
+}
+.form-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+option {
+  color: black;
+}

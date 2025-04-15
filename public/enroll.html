@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <link rel="stylesheet" href="./assets/css/enroll.css" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/72df367f0f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>International Elementary School Enrollment</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  </head>
+  <body class="text-white enroll-body">
+    <div class="enroll-overlay py-10 px-5">
+      <div
+        class="form-container max-w-4xl mx-auto p-6 bg-white shadow-2xl rounded-2xl"
+      >
+        <h1 class="text-3xl font-bold mb-6 text-center main-fonts">
+          Student Enrollment Application
+        </h1>
+        <form action="#" method="POST" class="space-y-8">
+          <!-- Student Information -->
+          <div>
+            <h2 class="text-2xl font-semibold mb-4">Student Information</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label class="block font-medium">First Name</label>
+                <input
+                  type="text"
+                  name="student_first_name"
+                  required
+                  class="w-full mt-1 p-2 border rounded-lg"
+                />
+              </div>
+              <div>
+                <label class="block font-medium">Last Name</label>
+                <input
+                  type="text"
+                  name="student_last_name"
+                  required
+                  class="w-full mt-1 p-2 border rounded-lg"
+                />
+              </div>
+              <div>
+                <label class="block font-medium">Date of Birth</label>
+                <input
+                  type="date"
+                  name="dob"
+                  required
+                  class="w-full mt-1 p-2 border rounded-lg"
+                />
+              </div>
+              <div>
+                <label class="block font-medium">Gender</label>
+                <select
+                  name="gender"
+                  required
+                  class="w-full mt-1 p-2 border rounded-lg"
+                >
+                  <option value="" class="text-black">Select</option>
+                  <option class="text-black">Male</option>
+                  <option class="text-black">Female</option>
+                  <option class="text-black">Other</option>
+                </select>
+              </div>
+              <div>
+                <label class="block font-medium">Nationality</label>
+                <input
+                  type="text"
+                  name="nationality"
+                  required
+                  class="w-full mt-1 p-2 border rounded-lg"
+                />
+              </div>
+              <div>
+                <label class="block font-medium">Grade Applying For</label>
+                <input
+                  type="text"
+                  name="grade"
+                  required
+                  class="w-full mt-1 p-2 border rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Parent/Guardian Information -->
+          <div>
+            <h2 class="text-2xl font-semibold mb-4">
+              Parent/Guardian Information
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label class="block font-medium">Full Name</label>
+                <input
+                  type="text"
+                  name="guardian_name"
+                  required
+                  class="w-full mt-1 p-2 border rounded-lg"
+                />
+              </div>
+              <div>
+                <label class="block font-medium">Relationship to Student</label>
+                <input
+                  type="text"
+                  name="relationship"
+                  required
+                  class="w-full mt-1 p-2 border rounded-lg"
+                />
+              </div>
+              <div>
+                <label class="block font-medium">Phone Number</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  required
+                  class="w-full mt-1 p-2 border rounded-lg"
+                />
+              </div>
+              <div>
+                <label class="block font-medium">Email Address</label>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  class="w-full mt-1 p-2 border rounded-lg"
+                />
+              </div>
+              <div class="md:col-span-2">
+                <label class="block font-medium">Home Address</label>
+                <textarea
+                  name="address"
+                  required
+                  class="w-full mt-1 p-2 border rounded-lg"
+                  rows="3"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional Information -->
+          <div>
+            <h2 class="text-2xl font-semibold mb-4">Additional Information</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="md:col-span-2">
+                <label class="block font-medium"
+                  >Languages Spoken at Home</label
+                >
+                <input
+                  type="text"
+                  name="languages"
+                  class="w-full mt-1 p-2 border rounded-lg"
+                />
+              </div>
+              <div class="md:col-span-2">
+                <label class="block font-medium"
+                  >Medical Conditions / Allergies</label
+                >
+                <textarea
+                  name="medical_info"
+                  class="w-full mt-1 p-2 border rounded-lg"
+                  rows="3"
+                ></textarea>
+              </div>
+              <div class="md:col-span-2">
+                <label class="block font-medium"
+                  >Previous School Attended (if any)</label
+                >
+                <input
+                  type="text"
+                  name="previous_school"
+                  class="w-full mt-1 p-2 border rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Agreement & Submission -->
+          <div class="mt-6">
+            <label class="inline-flex items-center">
+              <input type="checkbox" name="agreement" required class="mr-2" />
+              I confirm that all the information provided is accurate to the
+              best of my knowledge.
+            </label>
+          </div>
+
+          <div class="text-center">
+            <button
+              type="submit"
+              class="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl shadow-md transition duration-300"
+            >
+              Submit Application
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
